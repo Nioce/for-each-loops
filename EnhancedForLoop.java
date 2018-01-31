@@ -1,3 +1,5 @@
+package Foreachloop;
+
 import java.util.ArrayList;
 
 public class EnhancedForLoop
@@ -51,14 +53,24 @@ public class EnhancedForLoop
             p.eat();
         }
         /********** Your turn **********/
+        /////////////////1//////////////////////////
+        double[] moreNums={2.4,52.2,5.2};
+        double avg = means(moreNums);
+        System.out.println(avg);
         
+        /////////////////2//////////////////////////
+    }
         // #1 - Write a method mean(double nums[]) which uses an enhanced
         //      for loop to return the mean of the elements in nums. Test
         //      the method here.
-        
-        
-        
-
+    
+    public static double means(double [] nums){
+        double avg = 0.0;
+        for(int i=0;nums.length>i;i++){
+            avg+= nums[i];
+        }
+        return avg/nums.length;
+    }
         // #2 - Write a method max(double nums[]) which uses an enhanced
         //      for loop to return the maximum value of the elements in
         //      nums. Then test the method.
@@ -93,4 +105,3 @@ public class EnhancedForLoop
         
         
     }
-}

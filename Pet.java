@@ -1,3 +1,5 @@
+package Foreachloop;
+
 public class Pet extends Object
 {
 	// fields
